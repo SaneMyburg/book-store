@@ -4,17 +4,17 @@ const initialState = {
   catergories: [],
 };
 
-const categoriesSlice = createSlice({
-  name: 'categories',
+const catergoriesSlice = createSlice({
+  name: 'catergories',
   initialState,
   reducers: {
-    checkStatus: ({ categories }) => {
-      if (categories.length < 1) {
+    checkStatus: ({ catergories }) => {
+      if (catergories.length < 1) {
         return 'Under construction';
       }
-      return categories;
+      return catergories;
     },
   },
 });
 
-export default categoriesSlice;
+export default catergoriesSlice;
