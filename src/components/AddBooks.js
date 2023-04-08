@@ -30,13 +30,14 @@ const InputBook = () => {
   return (
     <form className="form">
       <hr />
-      <h3>ADD NEW BOOK</h3>
+      <h3 className="montserat bold">ADD NEW BOOK</h3>
       <input
         type="text"
         placeholder="Title"
         name="title"
         value={input.title}
         onChange={handleInput}
+        className="montserat normal"
         id="input-1"
       />
       <input
@@ -46,8 +47,9 @@ const InputBook = () => {
         value={input.author}
         onChange={handleInput}
         id="input-2"
+        className="montserat normal"
       />
-      <button type="button" onClick={handleSubmit}>ADD BOOK</button>
+      <button type="button" className="roboto bold" onClick={handleSubmit}>ADD BOOK</button>
     </form>
   );
 };

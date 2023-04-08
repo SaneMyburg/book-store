@@ -33,22 +33,22 @@ const DisplayBooks = () => {
                 <div className="progress-container">
                   <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax={100} aria-label="reading-progess" />
                   <div className="reading-progress">
-                    <p className="complete-reading">
+                    <p className="complete-reading montserat normal">
                       {Math.floor(Math.random() * (99 - 0)) + 0}
                       <span>%</span>
                     </p>
-                    <p className="completed">Completed</p>
+                    <p className="completed montserat normal">Completed</p>
                   </div>
                 </div>
                 <div className="line-2" />
                 <div className="chapter-status">
-                  <p className="cur-chap">CURRENT CHAPTER</p>
-                  <p className="chapter">
+                  <p className="cur-chap roboto mid-bold">CURRENT CHAPTER</p>
+                  <p className="chapter roboto mid-bold">
                     Chapter
                     {' '}
                     {Math.floor(Math.random() * (20 - 0)) + 0}
                   </p>
-                  <button type="button" className="update-btn">UPDATE PROGRESS</button>
+                  <button type="button" className="update-btn roboto mid-bold">UPDATE PROGRESS</button>
                 </div>
               </li>
             ))
