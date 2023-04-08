@@ -9,17 +9,17 @@ const Book = ({ book = { } }) => {
   return (
     <div className="all-books">
       <ul>
-        <li className="category">{book.category}</li>
-        <li className="title">{book.title}</li>
-        <li className="author">{book.author}</li>
+        <li className="category montserat normal">{book.category}</li>
+        <li className="title roboto bold">{book.title}</li>
+        <li className="author roboto mid-bold">{book.author}</li>
       </ul>
-      <button type="button" className="comments">
+      <button type="button" className="comments buttons roboto mid-bold">
         Comments
       </button>
-      <button type="button" className="remove" onClick={() => dispatch(removeBook(book.id))}>
+      <button type="button" className="remove buttons roboto mid-bold" onClick={() => dispatch(removeBook(book.id))}>
         Remove
       </button>
-      <button type="button" className="edit">
+      <button type="button" className="edit buttons roboto mid-bold">
         Edit
       </button>
     </div>
