@@ -28,7 +28,7 @@ const DisplayBooks = () => {
           <ul>
             {
             books.map((book) => (
-              <li key={book.id}>
+              <li className="book-list" key={book.id}>
                 <Book book={book} />
                 <div className="progress-container">
                   <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax={100} aria-label="reading-progess" />
@@ -40,10 +40,10 @@ const DisplayBooks = () => {
                     <p className="completed">Completed</p>
                   </div>
                 </div>
-                <div className="side-border" />
+                <div className="line-2" />
                 <div className="chapter-status">
-                  <p>CURRENT CHAPTER</p>
-                  <p>
+                  <p className="cur-chap">CURRENT CHAPTER</p>
+                  <p className="chapter">
                     Chapter
                     {' '}
                     {Math.floor(Math.random() * (20 - 0)) + 0}

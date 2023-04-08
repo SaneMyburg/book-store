@@ -28,7 +28,9 @@ const InputBook = () => {
     });
   };
   return (
-    <form>
+    <form className="form">
+      <hr />
+      <h3>ADD NEW BOOK</h3>
       <input
         type="text"
         placeholder="Title"
@@ -45,7 +47,7 @@ const InputBook = () => {
         onChange={handleInput}
         id="input-2"
       />
-      <button type="button" onClick={handleSubmit}>Add Book</button>
+      <button type="button" onClick={handleSubmit}>ADD BOOK</button>
     </form>
   );
 };

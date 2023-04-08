@@ -3,7 +3,7 @@ import InputBook from '../components/AddBooks';
 import DisplayBooks from '../components/DisplayBooks';
 
 const Books = () => (
-  <div>
+  <div className="bookstore">
     <DisplayBooks />
     <InputBook />
   </div>

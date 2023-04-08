@@ -13,13 +13,13 @@ const Book = ({ book = { } }) => {
         <li className="title">{book.title}</li>
         <li className="author">{book.author}</li>
       </ul>
-      <button type="button" className="comments">
+      <button type="button" className="comments buttons">
         Comments
       </button>
-      <button type="button" className="remove" onClick={() => dispatch(removeBook(book.id))}>
+      <button type="button" className="remove buttons" onClick={() => dispatch(removeBook(book.id))}>
         Remove
       </button>
-      <button type="button" className="edit">
+      <button type="button" className="edit buttons">
         Edit
       </button>
     </div>
